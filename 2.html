@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        header{
+            width: 350px;
+        }
+        header input{
+            border: 2px solid sandybrown;
+            height: 40px;
+            width: 200px;
+        }
+        #search{
+            height: 35px;
+            width: 140px;
+        }
+        header button span{
+            color: dimgray;
+        }
+        header p{
+            margin: 0;
+        }
+        #clear{
+            float: right;
+            background-color: gainsboro;
+            color: white;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <input type="search" placeholder="请输入想查找的商品" value="" id="searchin">
+        <button id="search"><span>搜索</span></button>
+        <p>最近搜索</p>
+        <div><button id="clear">X</button></div>
+    </header>
+</body>
+<script>
+    var search = document.getElementById('search');
+    var searchin = document.getElementById('searchin');
+    var header = document.getElementsByTagName('header')[0];
+    var p1 = document.getElementsByTagName('p')[0];
+    var c = document.getElementById('clear');
+    var j=localStorage.length;
+    window.onload = function(){
+        search.onclick = function(){
+            var b =1;
+            var s=[];
+            for(var k =0;k<localStorage.length;k++){
+                var key = localStorage.key(k);
+                var data = localStorage.getItem(key);
+                s[k]=data;
+            }
+            for (var i=0;i<s.length;i++){
+                if(searchin.value == s[i]){
+                    b=0;
+                }
+            }
+            if(b){
+                j++;
+                localStorage.setItem('key'+j,searchin.value);
+                var div1 = document.createElement('div');
+                div1.style.backgroundColor='gainsboro';
+                div1.style.display = 'inline';
+                div1.style.marginRight='5px';
+                div1.style.marginTop='10px';
+                div1.style.cssFloat= 'left';
+                div1.innerHTML = localStorage.getItem('key'+j);
+                var divs = document.getElementsByTagName('div');
+                header.insertBefore(div1,divs[0]);
+                location=location;
+            }else{
+                location=location;
+            }
+        }
+        for (var i =0;i<localStorage.length;i++){
+            var key = localStorage.key(i);
+            var data = localStorage.getItem(key);
+            var div0 = document.createElement('div');
+            div0.style.backgroundColor='gainsboro';
+            div0.style.display = 'inline';
+            div0.style.marginRight='5px';
+            div0.style.marginTop='10px';
+            div0.style.cssFloat= 'left';
+            div0.innerHTML = data;
+            var divs = document.getElementsByTagName('div');
+            header.insertBefore(div0,divs[0]);
+        }
+    }
+    c.onclick= function(){
+        localStorage.clear();
+        location=location;
+    }
+</script>
+</html>
