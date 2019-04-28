@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #canvas{
+            background-image: url('555.jpg');
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="300" height="300" ></canvas>
+</body>
+<script>
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext('2d');
+    var ismousedown;
+    context.fillStyle='#aaaaaa';
+    context.fillRect(0,0,300,300);
+    context.fill();
+    context.globalCompositeOperation = 'destination-out';
+    
+    canvas.onmousedown=function(e){
+        e.preventDefault();
+        ismousedown=true;
+    }
+    
+    canvas.onmouseup=function(e){
+        e.preventDefault();
+        ismousedown=false;
+        isClear();
+    }
+
+    canvas.onmousemove = function(e){
+        e.preventDefault();
+        if(ismousedown){
+            var x=(e.clientX+document.body.scrollLeft)-canvas.offsetLeft || 0;
+            var y=(e.clientY+document.body.scrollTop)-canvas.offsetTop || 0;            
+            context.beginPath();
+            context.arc(x,y,10,0,Math.PI*2);
+            context.fill();
+            isClear();
+        }
+    }
+
+    function isClear(){
+        var da = context.getImageData(0,0,300,300);
+        var num=0;
+        var n=da.data.length/4;
+        for(var i=0;i<da.data.length;i+=4){
+            if(da.data[i]==0){
+                num++;
+            }
+        }
+        //85% , 1/4 * 85/100 = 17/80
+        if(num>=(da.data.length*17)/80){
+            context.clearRect(0,0,300,300);
+        }
+    }
+</script>
+</html>
