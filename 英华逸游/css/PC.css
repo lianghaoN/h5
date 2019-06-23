@@ -1,0 +1,904 @@
+*{ 
+    position: 0;
+    margin: 0;
+}
+ul,li,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0 auto;
+    background-color: #dddddd;
+}
+#nav--{
+    width: 1428px;
+    margin: 0 auto;
+}
+header{
+    background-color: black;
+    width: 1428px;
+    height: 45px;
+    float: left;
+}
+header nav{
+    width: 1200px;
+    height: 45px;
+    margin: 0 auto;
+}
+header nav p{
+    color: white;
+    float: right;
+    margin-right: 42px;
+    margin-left: 9px;
+    line-height: 45px;
+}
+header nav img{
+    float: right;
+}
+header nav a{
+    color: white;
+    float: right;
+    line-height: 45px;
+}
+#nav-- div{
+    background-color: #ffffff;
+    width: 1428px;
+}
+#nav1{
+    width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 45px;
+    padding: 0px;
+    margin: 45px 0px 0px 0px;
+}
+#nav1 img{
+    float: left;
+    margin-right: 148px;
+    margin-left: 115px;
+}
+#nav1 ul{
+    margin-left: 600px;
+    margin-top:15px;
+}
+#nav1 ul li{
+    float: left;
+    line-height: 80px;
+    margin-right: 60px;
+}
+#nav1 ul li a{
+    color: black;
+}
+.navbar-header{
+    display: block;
+}
+.active{
+    color: #cb5405;
+    background: url(../img/lineline.jpg) bottom no-repeat;
+}
+
+#myCarousel{
+    margin: 0 auto;
+    height: 445px;
+    position: relative;
+    margin-top: 125px;
+}
+.img1{
+    position: absolute;
+    top: 48.76%;
+    left: 8%;
+}
+.img2{
+    position: absolute;
+    top: 48.76%;
+    right: 8%;
+}
+.shouye-p1{
+    color: #e0e0e0;
+    position: absolute;
+    top: 17.97%;
+    left: 13.16%;
+    font-size: 50px;
+}
+.shouye-p2{
+    color: #b5b5b5;
+    position: absolute;
+    top: 38.65%;
+    left: 13.65%;
+    font-size: 20px;
+}
+.shouye-p3{
+    position: absolute;
+    color: #b5b5b5;
+    top: 47.4%;
+    left: 13.65%;
+    font-size: 20px;
+}
+.shouye-p4{
+    display: none;
+}
+.shouye-img1{
+    position: absolute;
+    top: 34.83%;
+    left: 13.72%;
+}
+.shouye-img2{
+    position: absolute;
+    top: 55.05%;
+    left: 13.72%;
+}
+#shouyeinput{
+    position: absolute;
+    width: 585px;
+    height: 50px;
+    left: 29.4%;
+    top: 78.65%;
+    border: solid 4px #13070b;
+    border-radius: 5px;
+}
+.shouyebtn1{
+    float: left;
+    width: 146px;
+    height: 42px;
+    background-color: #d3d3d8;
+    border-radius: 5px 0px 0px 5px;
+}
+.shouyebtn1 img{
+    float: left;
+    margin-left: 11%;
+}
+.shouyebtn1 span{
+    float: left;
+    line-height: 25px;
+    margin-left: 13%;
+}
+#shouyeinput input{
+    float: left;
+    width: 310px;
+    height: 42px;
+    background-color: #e1e1e1;
+    border-radius: 0px;
+}
+.shouyebtn2{
+    float: left;
+    width: 121px;
+    height: 42px;
+    background-color: #cb5405;
+    border-radius: 0px 5px 5px 0px;
+}
+
+/* 热门路线 */
+#remen{
+    max-width: 1200px;
+    width: auto;
+    height: 1125px;
+}
+#rmp1{
+    text-align: center;
+}
+#remen img{
+    margin-bottom: 4px;
+}
+#remen div p{
+    color: white;
+}
+#remen div div div div{
+    background-color: black;
+}
+#rmdiv1{
+    float: left;
+    margin-top: 385px;
+    width: 590px;
+    height: 105px;
+}
+#rmdiv1 p{
+    float: left;
+    margin-left: 40px;
+}
+#rmdiv2{
+    float: left;
+    width: 610px;
+    height: 87px;
+    background-color: black;
+    margin-top: 205px;
+    opacity:0.4;
+}
+#rmdiv2 p{
+    float: left;
+    margin-left: 35px;
+}
+
+#qianzheng{
+    width: 1200px;
+    height: 825px;
+}
+#shimin{
+    width: 1200px;
+    height: 1370px;
+}
+
+/* 签证推荐 */
+#qianzheng{
+    max-width: 1200px;
+    height: 760px;
+    width: auto;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#qzp1{
+    text-align: center;
+    font-size: 30px;
+}
+#qianzheng p{
+    color: black;
+}
+#qzp2{
+    font-size: 15px;
+}
+#qzp3{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+#qzbdiv1 p{
+    display:inline;
+    color: white;
+}
+#qzdiv1{
+    float: left;
+    width: 385px;
+    height: 70px;
+    background-color: black;
+    margin-top: 485px;
+    opacity:0.5;
+}
+#qzbdiv2 div div{
+    float: left;
+    width: 385px;
+    height: 50px;
+    background-color: black;
+    margin-top: 225px;
+    opacity:0.6;
+}
+#qzbdiv3 div div{
+    float: left;
+    width: 385px;
+    height: 50px;
+    background-color: black;
+    margin-top: 225px;
+    opacity:0.6;
+}
+
+
+@media screen and (min-width:751px){
+    body{
+        max-width: 1428px;
+    }
+    #na1{
+        width: 1200px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    #navipt{
+        display: none;
+    }
+    .navbar-header{
+        height: 0;
+    }
+
+
+    /* 轮播图 */
+    #myCarousel{
+        height: 445px;
+    }
+
+    /* 机场接送 */
+    #jiesong{
+        max-width: 1200px;
+        height: 365px;
+        margin-top: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #14316d;
+        position: relative;
+    }
+    #jiesong-img1{
+        height: 365px;
+        float: left;
+    }
+    #jiesong-img2{
+        position: absolute;
+        top: 21.36%;
+        left: 85%;
+    }
+    #jiesong p{
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        left: 85.33%;
+        top: 52.87%;
+    }
+    #jiesong button{
+        background-color: #15316d;
+        border: solid 1px #ffffff;
+        color: white;
+        width: 179px;
+        height: 52px;
+        position: absolute;
+        top: 73%;
+        left: 81%;
+    }
+    #jiesong-img3{
+        display: none;
+    }
+    #jsp1{
+        display: none;
+    }
+    #jsp2{
+        display: none;
+    }
+    #jsp3{
+        display: none;
+    }
+    #jsbtn1{
+        display: none;
+    }
+
+    /* 热门 */
+    #rmbdiv div{
+        width: 590px;
+    }
+    #remen button{
+        display: none;
+    }
+
+    /* 签证推荐 */
+    #qianzheng button{
+        border: solid 1px black;
+        border-radius: 9px;
+        background-color: #dddddd;
+        font-size: 20px;
+        float: left;
+        margin-top: 52px;
+        margin-left: 480px;
+        width: 232px;
+        height: 52px;
+    }
+    #qzdiv4{
+        display: none;
+    }
+    #qzdiv5{
+        display: none;
+    }
+    #qzdivp1{
+        margin-left: 45px;
+        padding-top: 23px;
+        font-size: 20px;
+    }
+    #qzdiv1p2{
+        margin-left: 25px;
+        margin-top: 20px;
+        font-size: 25px;
+    }
+    #qzdiv5p1{
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 13px;
+    }
+    #qzdiv5p2{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+    #qzdiv5p3{
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 13px;
+    }
+    #qzdiv5p4{
+        font-size: 25px;
+        margin-top: 10px;
+        margin-left: 22px;
+    }
+
+
+    /* 使命 */
+    #shimin{
+        margin-top: 150px;
+        max-width: 1428px;
+        width: auto;
+        height: 1845px;
+    }
+    #smdiv1{
+        max-width: 1428px;
+        width: auto;
+        height: 345px;
+    }
+    #smdiv2{
+        max-width: 1428px;
+        width: auto;
+        height: 1500px;
+        background: url(../img/back.png) 0px 0px no-repeat;
+    }
+    #smdiv3{
+        width: 1200px;
+        height: 1500px;
+        margin: 0 auto;
+    }
+    #smdiv3p1{
+        padding-top: 127px;
+        text-align: center;
+        font-size: 30px;
+    }
+    #smdiv3p2{
+        display: none;
+    }
+    #smdiv3p3{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 60px;
+    }
+    #smdiv4{
+        height: 1230px;
+        max-width: 1200px;
+    }
+    #smdiv5{
+        height: 350px;
+        width: 700px;
+        float: left;
+        background-color: #1b4d7b;;
+        opacity: 0.85;
+    }
+    #smdiv5 p{
+        color: white;
+    }
+    #smdiv5p1{
+        float: left;
+        margin-top: 70px;
+        margin-left: 36.4%;
+        font-size: 30px;
+    }
+    #smdiv5p2{
+        float: left;
+        margin-left: 13.57%;
+        width: 520px;
+        margin-top: 20px;
+    }
+    #smdiv6{
+        max-width: 1200px;
+        height: 400px;
+        background-color: #1b4d7b;;
+        opacity: 0.85;
+    }
+    #smdiv6 div{
+        float: left;
+        height: 400px;
+        width: 300px;
+        background: url(../img/rorate.png) 50px 50px no-repeat;
+    }
+    #smdiv6 div img{
+        margin-left: 115px;
+        margin-top: 100px;
+    }
+    #smdiv6 div p{
+        color: white;
+        text-align: center;
+    }
+    #smdiv7{
+        display: none;
+    }
+
+    /* 最后底部 */
+    footer{
+        max-width: 1428px;
+        width: auto;
+        height: 527px;
+        background: black;
+    }
+    footer p{
+        color: white;
+        font-size: 20px;
+        padding-top: 7px;
+    }
+    footer a{
+        color: white;
+    }
+    footer ul li{
+        float: left;
+        font-size: 1px;
+    }
+    #lastdiv1{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 380px;
+        position: relative;
+    }
+    #lastmd1{
+        position: absolute;
+        left: 10px;
+        top: 45px;
+    }
+    #lastdiv1 div{
+        float: left;
+    }
+    #lastmd2{
+        position: absolute;
+        left: 10px;
+        top: 153px;
+    }
+    #lastmd2 div ul li{
+        width: 40px;
+        height: 16px;
+        margin-right: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #lastmd3{
+        position: absolute;
+        left: 10px;
+        top: 228px;
+    }
+    #lastmd3 div ul li{
+        width: 50px;
+        height: 16px;
+        margin-top: 13px;
+        margin-right: 15px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    #lastmd4{
+        position: absolute;
+        left: 10px;
+        top: 274px;
+    }
+    #lastmd4 div ul li{
+        width: 50px;
+        height: 16px;
+        margin-top: 13px;
+        margin-right: 15px;
+        text-align: center;
+    }
+    footer hr{
+        height: 1px;
+        width: auto;
+        color: #404040;
+    }
+    #lastp3{
+        display: none;
+    }
+    #lastp1{
+        display: inline;
+        padding-right: 12px;
+        margin-left: 30%;
+    }
+    #lastp2{
+        display: inline;
+    }
+}
+
+
+@media screen and (max-width:750px){
+    #top{display: none;}
+    body{
+        width: 750px;
+    }
+    #nav--{
+        width: 100%;
+    }
+    #na1{
+        width: 750px;
+        height: 80px;
+        margin: 0 auto;
+    }
+    .navbar-header{
+        width: 750px;
+        height: 50px;
+    }
+    .navdiv{
+        width: 750px;
+    }
+    #bs-1 ul{
+        float: left;
+        margin-top: 50px;
+    }
+    #navipt{
+        display: block;
+    }
+    #navipt{
+        margin-top: 28px;
+        background-color: #e8420a;
+        color: white;
+        width: 150px;
+        height: 40px;
+    }
+    #navbtn{
+        margin-top: 30px;
+        margin-right: 700px;
+    }
+    #nav1 ul li{
+        float: left;
+    }
+    #navbtn span{
+        background-color: black;
+    }
+
+    /* 轮播图 */
+    #myCarousel{
+        width: 750px;
+        height: 445px;
+        margin-top: 125px;
+    }
+    .shouye-p1{
+        font-size: 40px;
+        left: 8%;
+    }
+    .shouye-p2{
+        display: none;
+    }
+    .shouye-p3{
+        display: none;
+    }
+    .shouye-p4{
+        display: block;
+        position: absolute;
+        color: #b5b5b5;
+        font-size: 30px;
+        left: 8%;
+        top: 38%;
+    }
+    .shouye-img1{
+        display: none;
+    }
+    .shouye-img2{
+        display: none;
+    }
+    #shouyeinput{
+        left: 8%;
+    }
+
+    /* 机场接送 */
+    #jiesong{
+        width: 750px;
+        height: 200px;
+        background-color: #ffffff;
+        margin-top: 60px;
+        position: relative;
+    }
+    #jiesong-img1{
+        display: none;
+    }
+    #jiesong-img2{
+        display: none;
+    }
+    #jsbtn2{
+        display: none;
+    }
+    #jiesong-img3{
+        float: left;
+        margin-left: 42px;
+        margin-top: 45px;
+    }
+    #jsp4{
+        display: none;
+    }
+    #jsp1{
+        margin-top: 45px;
+        font-size: 28px;
+        display:block;
+        float: left;
+        color: #1c5080;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+    #jsp2{
+        top: 105px;
+        position: absolute;
+        font-size: 18px;
+        display: block;
+        left: 155px;
+        color: #666666;
+    }
+    #jsp3{
+        top: 135px;
+        left: 155px;
+        position: absolute;
+        font-size: 18px;
+        display: block;
+        color: #666666;
+    }
+    #jsbtn1{
+        margin-top: 72px;
+        margin-left: 130px;
+        float: left;
+        display: block;
+        width: 165px;
+        height: 55px;
+        background-color: #ffffff;
+        border: solid 1px #b5b5b5;
+        color: #666666;
+        font-size: 20px;;
+    }
+
+    /* 热门 */
+    #remen{
+        width: 750px;
+        height: 1300px;
+        background-color: white;
+        margin-top: 20px;
+    }
+    #rmbdiv div{
+        width: 668px;
+    }
+    #rmdiv1{
+        height: 115px;
+        width: 668px;
+    }
+    #rmbdiv2 div{
+        display: none;
+    }
+    #remen button{
+        display: block;
+        background-color: white;
+        border: solid 1px #b5b5b5;
+        margin-left: 220px;
+        margin-top: 70px;
+        width: 225px;
+        height: 55px;
+        font-size: 20px;
+        color: #8f8f8f;
+        border-radius: 8px;
+    }
+    #rmp2{
+        display: none;
+    }
+    #rmp1{
+        text-align: unset;
+    }
+
+
+/* 签证推荐 */
+    #qianzheng{
+        width: 750px;
+        height: 700px;
+        background-color: white;
+    }
+    #qzbdiv{
+        display: none;
+    }
+    #qzbdiv2{
+        display: none;
+    }
+    #qzbdiv3{
+        display: none;
+    }
+    #qzdiv4{
+        display: block;
+    }
+    #qzdiv5{
+        display: block;
+    }
+    #qzdiv1{
+        width: 295px;
+        height: 55px;
+        margin-top: 352px;
+    }
+    #qzdiv1p1{
+        margin-left: 15px;
+        font-size: 20px;
+        margin-top: 13px;
+    }
+    #qzdiv1p2{
+        margin-left: 10px;
+        margin-top: 8px;
+        font-size: 28px;
+    }
+    #qzdiv5 div div{
+        float: left;
+        width: 360px;
+        height: 50px;
+        background-color: black;
+        margin-top: 145px;
+        opacity:0.5;
+    }
+    #qzdiv5p1{
+        margin-left: 20px;
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    #qzdiv5p2{
+        font-size: 28px;
+        margin-left: 75px;
+    }
+    #qzdiv5p3{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 12px;
+    }
+    #qzdiv5p4{
+        margin-left: 75px;
+        font-size: 28px;
+    }
+    #qzdiv5 div{
+        margin-top: 7px;
+    }
+    #qianzheng button{
+        width: 225px;
+        height: 55px;
+        background-color: white;
+        border: solid 1px #e5e5e5;
+        border-radius: 6px;
+        margin-left: 240px;
+        margin-top: 38px;
+        color: #8f8f8f;
+        font-size: 20px;
+    }
+
+    /* 使命 */
+    #shimin{
+        width: 750px;
+        height: 1700px;
+        background: white;
+        margin: 0 auto;
+    }
+    #smdiv3p1{
+        display:inline;
+        font-size: 30px;
+    }
+    #smdiv3p2{
+        display:inline;
+        font-size: 30px;
+    }
+    #smdiv3p3{
+        display:inline;
+        font-size: 20px;
+    }
+    #smdiv4{
+        display: none;
+    }
+    #smdiv7{
+        height: 1730px;
+        max-width: 750px;
+        border-top: solid 1px #e8e8e8;
+        background: url(../img/back.png) 0px 0px no-repeat;
+    }
+    #smdiv7 div{
+        border-bottom: solid 1px #e8e8e8;
+        height: 160px;
+        width: 668px;
+    }
+    #smdiv7 div img{
+        float: left;
+        margin-left: 80px;
+        margin-top: 15px;
+        padding-bottom: 70px;
+    }
+    #smdiv7 div p{
+        float: left;
+        font-size: 20px;
+        margin-left: 70px;
+        margin-bottom: 0px;
+    }
+
+    /* 最后底部 */
+    footer{
+        max-width: 750px;
+        height: 300px;
+        width: auto;
+        background: #343235;
+    }
+    footer p{
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+    #lastdiv1{
+        display: none; 
+    }
+    #lastp1{
+        margin-top: 105px;
+    }
+}
